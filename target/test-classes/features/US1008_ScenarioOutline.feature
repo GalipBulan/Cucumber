@@ -1,3 +1,4 @@
+
 Feature: US1008 Scenario Outline ile birden fazla data icin test calistirma
 
   Scenario Outline: TC13 Scenario outline ile amazonda arama yapilabilmeli
@@ -18,3 +19,4 @@ Feature: US1008 Scenario Outline ile birden fazla data icin test calistirma
       |Java      |
       |Samsung   |
       |Apple     |
+      |Golf      |

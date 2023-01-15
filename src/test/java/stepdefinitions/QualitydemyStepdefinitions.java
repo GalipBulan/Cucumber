@@ -45,4 +45,10 @@ public class QualitydemyStepdefinitions {
 
         qualitydemyPage.passwordKutusu.sendKeys(password);
     }
+
+    @And("cookisi kabul eder")
+    public void cookisiKabulEder() {
+
+        qualitydemyPage.cookies.click();
+    }
 }

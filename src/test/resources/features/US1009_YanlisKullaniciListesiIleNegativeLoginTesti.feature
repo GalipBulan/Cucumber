@@ -6,6 +6,7 @@ Feature: US1009_ Yanlis kullanici adi ve password listesi ile negatif login test
     Then ilk sayfa login linkine click yapar
     And kullanici kutusuna manuel olarak "<yanlisUsername>" yazar
     And password kutusuna manuel olarak "<yanlisPassword>" yazar
+    And cookisi kabul eder
     And 3 saniye bekler
     And login butonuna basar
     And basarili giris yapilamadigini test eder
