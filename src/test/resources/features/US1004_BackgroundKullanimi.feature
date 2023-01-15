@@ -1,4 +1,4 @@
-
+@p1
 Feature: US1004 Kullanici bastaki ortak adimlar icin Background kullanir.
 
   Background: Tüm seneryolar icin ortak ilk adim

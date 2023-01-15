@@ -94,12 +94,17 @@ public class AmazonStepDefinitions {
 
         Assert.assertTrue(actualUrl.contains(arananKeleme));
 
-
     }
 
     @And("{int} saniye bekler")
     public void saniyeBekler(int bekle) throws InterruptedException {
 
         Thread.sleep(3000);
+    }
+
+    @And("acilan tum sayfalari kapatir")
+    public void acilanTumSayfalariKapatir() {
+
+        Driver.quitDriver();
     }
 }

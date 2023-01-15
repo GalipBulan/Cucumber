@@ -71,9 +71,5 @@ public class WebUniversityStepdefinitions {
         Assert.assertTrue(webUniversityPage.contactUsLinki.isDisplayed());
     }
 
-    @And("acilan tum sayfalari kapatir")
-    public void acilanTumSayfalariKapatir() {
 
-        Driver.quitDriver();
-    }
 }
