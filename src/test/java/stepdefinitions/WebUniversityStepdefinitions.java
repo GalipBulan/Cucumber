@@ -1,11 +1,10 @@
 package stepdefinitions;
 
 import com.github.javafaker.Faker;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.WebUniversityPage;
-import utulities.Driver;
+import utilities.Driver;
 
 import java.util.Set;
 

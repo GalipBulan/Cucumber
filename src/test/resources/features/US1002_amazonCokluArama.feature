@@ -1,7 +1,7 @@
-
+@wip
 Feature:US1002 Kullanici amazon sayfasinda birden fazla urun aratir
 
-  Scenario: TC03 Kullanici method ile Nutella aratir
+    Scenario: TC03 Kullanici method ile Nutella aratir
 
     Given kullanici amazon anasayfaya gider
     Then amazon arama kutusuna Nutella yazip aratir
@@ -9,8 +9,8 @@ Feature:US1002 Kullanici amazon sayfasinda birden fazla urun aratir
     And sayfayi kapatir
 
 
-  Scenario: TC05 Kullanici method ile java
-  aratir
+    Scenario: TC05 Kullanici method ile java
+    aratir
 
     Given kullanici amazon anasayfaya gider
     Then amazon arama kutusuna Java yazip aratir
@@ -18,7 +18,7 @@ Feature:US1002 Kullanici amazon sayfasinda birden fazla urun aratir
     And sayfayi kapatir
 
 
-  Scenario: TC05 Kullanici  method ile Samsung aratir
+    Scenario: TC05 Kullanici  method ile Samsung aratir
 
     Given kullanici amazon anasayfaya gider
     Then amazon arama kutusuna Samsung yazip aratir

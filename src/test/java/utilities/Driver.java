@@ -1,4 +1,4 @@
-package utulities;
+package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -32,13 +32,15 @@ public class Driver {
             switch (browser) {
 
                 case "chrome":
-                    //WebDriverManager.chromedriver().setup();
-                    //driver = new ChromeDriver();
+                    WebDriverManager.chromedriver().setup();
                     ChromeOptions ops = new ChromeOptions();
                     ops.addArguments("--remote-allow-origins=*");
-                    WebDriverManager.chromedriver().setup();
-                    WebDriver driver = new ChromeDriver(ops);
+                    driver = new ChromeDriver(ops);
                     break;
+
+                    //WebDriverManager.chromedriver().setup();
+                    //driver = new ChromeDriver();
+                    //break;
 
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
@@ -56,9 +58,9 @@ public class Driver {
 
             }
 
+
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
         }
 
         return driver;
@@ -80,6 +82,4 @@ public class Driver {
             driver=null;
         }
     }
-
 }
-

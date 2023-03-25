@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin={"html:target/cucumber-reports-p2.html",
                 // Farkli ranner de calistigi icin raporlara hangi
-                // rannerde calistigini anlamk icin ranner ismini hatirlatici ifadeler eklemeliyiz
+                // Rannerde calistigini anlamk icin ranner ismini hatirlatici ifadeler eklemeliyiz
                 "json:target/json-reports/cucumberp2.json",
                 "junit:target/xml-report/cucumberp2.xml"
         },

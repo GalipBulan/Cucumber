@@ -5,9 +5,8 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-
 @CucumberOptions(
-        plugin={"html:target\\cucumber-reports-smoke.html",
+        plugin={"html:target\\cucumber-reports.html",
                 // Calistiracagimiz raporun kalici olmasini
                 // istiyorsak  reports'tan sonra mudehale edip US ismini yazabiliriz
                 // Ornegin:: plugin={"html:target\\cucumber-reports-US1006.html",
@@ -16,9 +15,10 @@ import org.junit.runner.RunWith;
                 //Ustteki "json" "xml-report" rapor gorsel acidan bizim acimizdan cok ise yaramaz fakat makinalara
                 // gondericek isek ihtiyacimiz olabilir. Anlayamayacagimiz sekilde uzun ve anlamsiz kodlar verirler
         },
-        features = "src/test/resources/features",
-        glue = "stepdefinitions" ,
-        tags= "@smoke",
+
+        features = "src/test/resources/features" , // Buraya features yolu yapistirilir
+        glue = "stepdefinitions" , // Buraya stepdefinitions uzantisi sadece "stepdefinitions" olarak kopyalanir
+        tags= "@wip",
         dryRun = false
 )
 

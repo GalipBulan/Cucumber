@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         // Paralel Ranner calistirmak istiyorsak paralel calistiracagimiz ranner isimleinde
-        // ortak ifadelerin olamsi gerekir. Ornegin ParalelRunner1 ParalelRunner2
+        // ortak ifadelerin olmasi gerekir. Ornegin ParalelRunner1, ParalelRunner2  icin ParalelRunner ortaktir
+
+        // Bunun icin pomm exm le Plugin eklerken  dependencies disinda projeckt icinde kaliriz
 
         plugin={"html:target/cucumber-reports-p1.html",
                 // Farkli ranner de calistigi icin raporlara hangi

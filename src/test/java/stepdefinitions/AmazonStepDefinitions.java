@@ -4,17 +4,18 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import pages.AmazonPage;
-import utulities.ConfigReader;
-import utulities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class AmazonStepDefinitions {
+
     AmazonPage amazonPage = new AmazonPage();
 
     @Given("kullanici amazon anasayfaya gider")
     public void kullanici_amazon_anasayfaya_gider() {
+
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
     }
     @Then("amazon arama kutusuna Nutella yazip aratir")
@@ -31,6 +32,8 @@ public class AmazonStepDefinitions {
 
         Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
     }
+
+
     @Then("sayfayi kapatir")
     public void sayfayi_kapatir() {
 
@@ -108,3 +111,6 @@ public class AmazonStepDefinitions {
         Driver.quitDriver();
     }
 }
+
+
+
